@@ -29,10 +29,18 @@ module.exports = {
   },
   module: {
     rules: [
-      // {
-      //   test: /\.html$/,
-      //   use: ["html-loader"],
-      // },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "src/assets", // Папка, куди будуть збережені SVG-файли
+            },
+          },
+        ],
+      },
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
@@ -86,7 +94,8 @@ module.exports = {
       filename: "index.html",
       inject: true,
       templateParameters: {
-        headerContent: () => require("fs").readFileSync("./src/partials/header.html", "utf8"),
+        headerContent: () =>
+          require("fs").readFileSync("./src/partials/header.html", "utf8"),
       },
     }),
     new MiniCssExtractPlugin({
