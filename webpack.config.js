@@ -29,18 +29,7 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.svg$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "src/assets", // Папка, куди будуть збережені SVG-файли
-            },
-          },
-        ],
-      },
+    
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
