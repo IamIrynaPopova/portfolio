@@ -1,17 +1,97 @@
-.container {
-padding: 40px 170px 40px 170px ;
+@font-face {
+  font-family: "Sixtyfour";
+  src: url("./fonts/Sixtyfour-Regular-VariableFont_BLED,SCAN.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
 
+body {
+  color: #5b5959;
+  font-family: "Sixtyfour";
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+img,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
 }
 
 img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 40px 170px 40px 170px;
+}
+
+.section {
+}
+
+.header {
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.nav__list__item {
+  font-size: 20px;
+}
+
+.nav__list__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.nav__contacts {
+  display: flex;
+  align-items: center;
+}
+
+.nav__contacts__item {
+}
+
+.nav__contacts__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.nav__contacts__link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav__contacts__svg {
+  width: 30px;
+  height: 30px;
+  fill: #5b5959;
+}
+
+.human {
   width: 100px;
   margin-bottom: 20px;
 }
-
-
-
-
-
-
-
-
