@@ -2,8 +2,7 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.css ***!
   \**************************************************************************************************************/
 .container {
-  padding-left: 170px;
-  padding-right: 170px;
+  padding: 40px 170px 40px 170px;
 }
 
 img {
@@ -11,4 +10,4 @@ img {
   margin-bottom: 20px;
 }
 
-/*# sourceMappingURL=bundle.613f76911253ada739ed.css.map*/
+/*# sourceMappingURL=bundle.c3878428d63fc173ef34.css.map*/
