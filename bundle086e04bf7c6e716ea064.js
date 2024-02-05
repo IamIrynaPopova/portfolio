@@ -19,25 +19,15 @@ function example() {
 
 /***/ }),
 
-/***/ "./src/styles/main.css":
-/*!*****************************!*\
-  !*** ./src/styles/main.css ***!
-  \*****************************/
+/***/ "./src/styles/main.scss":
+/*!******************************!*\
+  !*** ./src/styles/main.scss ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
-
-/***/ }),
-
-/***/ "./src/assets/human.jpg":
-/*!******************************!*\
-  !*** ./src/assets/human.jpg ***!
-  \******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "assets/human.jpg";
 
 /***/ }),
 
@@ -150,10 +140,8 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _example__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./example */ "./src/example.js");
-/* harmony import */ var _assets_human_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/human.jpg */ "./src/assets/human.jpg");
-/* harmony import */ var _assets_sprite_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/sprite.svg */ "./src/assets/sprite.svg");
-/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/main.css */ "./src/styles/main.css");
-
+/* harmony import */ var _assets_sprite_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/sprite.svg */ "./src/assets/sprite.svg");
+/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
 
 
 
@@ -161,4 +149,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlef1e2de1c9450c665f0c0.js.map
+//# sourceMappingURL=bundle086e04bf7c6e716ea064.js.map
