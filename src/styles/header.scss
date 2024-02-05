@@ -1,51 +1,5 @@
-@font-face {
-  font-family: "Sixtyfour";
-  src: url("./fonts/Sixtyfour-Regular-VariableFont_BLED,SCAN.ttf")
-    format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-body {
-  color: #5b5959;
-  font-family: "Sixtyfour";
-}
-
-a,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-img,
-ol {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
-  padding: 40px 170px 40px 170px;
-}
-
-.section {
-}
-
 .header {
+
 }
 
 .nav {
@@ -56,11 +10,12 @@ img {
 .nav__list {
   display: flex;
   align-items: center;
-  margin-right: 40px;
+  margin-right: 60px;
 }
 
 .nav__list__item {
   font-size: 20px;
+  cursor: pointer;
 }
 
 .nav__list__item:not(:last-child) {
