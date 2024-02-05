@@ -10,7 +10,7 @@
 @font-face {
   font-family: "Kanit-Light";
   src: url(assets/Kanit-Light.woff) format("woff");
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
@@ -104,4 +104,4 @@ img {
   margin-bottom: 20px;
 }
 
-/*# sourceMappingURL=bundle.4957ea1c611e939bb93f.css.map*/
+/*# sourceMappingURL=bundle.73c27b8a300c14c64e65.css.map*/
