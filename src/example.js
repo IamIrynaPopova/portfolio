@@ -1,5 +1,5 @@
 function example() {
-  return "I created my own bundler ";
+  return "Hello, world!";
 }
 
 export default example;

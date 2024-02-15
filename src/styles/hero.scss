@@ -1,0 +1,29 @@
+.section-hero {
+  padding: 60px 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.hero__title-wrapper {
+  margin-right: auto;
+  width: 640px;
+}
+
+.hero__title {
+  font-family: "Sixtyfour";
+  font-size: 30px;
+  //  color: rgb(66, 68, 110);
+}
+
+.hero__img-wrapper {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.hero__img {
+  width: 350px;
+  height: auto;
+}
