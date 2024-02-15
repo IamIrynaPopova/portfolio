@@ -11,7 +11,6 @@ document.body.innerHTML = '<div id="root"></div>';
 
 // Render your React component instead
 const root = ReactDOM.createRoot(document.getElementById("root"));
-console.log(root);
 root.render(
   <StrictMode>
     <App />
