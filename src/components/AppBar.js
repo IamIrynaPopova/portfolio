@@ -1,7 +1,3 @@
-import React from "react";
-import sprite from "../assets/sprite.svg";
-import css from "../styles/main.scss";
-
 const AppBar = () => {
   return (
     <div className="section-header container">

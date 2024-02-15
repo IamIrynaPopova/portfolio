@@ -1,8 +1,14 @@
 import React from "react";
-import AppBar from "./AppBar"
+import AppBar from "./AppBar";
+import Hero from "./Hero";
 
 const App = () => {
-  return <AppBar/>;
+  return (
+    <>
+      <AppBar />
+      <Hero />
+    </>
+  );
 };
 
 export default App;
