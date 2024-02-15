@@ -1,3 +1,5 @@
+import React from "react";
+
 const AppBar = () => {
   return (
     <div className="section-header container">
