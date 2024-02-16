@@ -5,22 +5,38 @@
 .hero {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .hero__title-wrapper {
-  margin-right: auto;
-  width: 640px;
+  width: 650px;
 }
 
 .hero__title {
-  font-family: "Sixtyfour";
-  font-size: 30px;
-  //  color: rgb(66, 68, 110);
+  font-family: "Kanit-Bold";
+  font-size: 50px;
+}
+
+.hero__title-name {
+  background: linear-gradient(45deg, #42446e 33%, #0057b8 66%, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero__img-wrapper {
+  position: relative;
   border-radius: 50%;
   overflow: hidden;
+}
+.hero__img-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  padding: 10px;
+  background: linear-gradient(to top, #ffd700, #0057b8);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
 }
 
 .hero__img {

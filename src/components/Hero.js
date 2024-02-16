@@ -6,9 +6,10 @@ const Hero = () => {
       <div className="hero">
         <div className="hero__title-wrapper">
           <h1 className="hero__title">
-            Hi 👋
-            <br />
-            My name is Iryna <br />I build things for web
+            Привіт 👋
+            <br /> Мене звати Іра.
+            <br /> Я{" "}
+            <span className="hero__title-name">Junior Frontend developer</span>
           </h1>
         </div>
         <div className="hero__img-wrapper">

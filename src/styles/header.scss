@@ -1,9 +1,8 @@
 .section-header {
-    padding: 20px 0; 
+  padding: 20px 0;
 }
 
 .header {
-
 }
 
 .nav {
@@ -20,10 +19,11 @@
 .nav__list__item {
   font-size: 20px;
   cursor: pointer;
+  padding: 10px;
 }
 
 .nav__list__item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .nav__contacts {
@@ -32,10 +32,11 @@
 }
 
 .nav__contacts__item {
+  padding: 10px;
 }
 
 .nav__contacts__item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .nav__contacts__link {
@@ -47,7 +48,7 @@
 .nav__contacts__svg {
   width: 30px;
   height: 30px;
-  fill: #5b5959;
+  fill: #42446e;;
 }
 
 .human {
