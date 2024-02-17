@@ -1,3 +1,5 @@
+import React from "react";
+
 const StackList = () => {
   return (
     <div className="section-stack container">
