@@ -47,24 +47,29 @@ const StackList = () => {
         </li>
         <li className="stack__item">
           <svg className="stack__svg">
+            <use href="./assets/sprite.svg#vscode"></use>
+          </svg>
+        </li>
+        <li className="stack__item">
+          <svg className="stack__svg">
+            <use href="./assets/sprite.svg#github"></use>
+          </svg>
+        </li>
+        <li className="stack__item">
+          <svg className="stack__svg">
             <use href="./assets/sprite.svg#nodejs"></use>
           </svg>
         </li>
         <li className="stack__item">
           <svg className="stack__svg">
-            <use href="./assets/sprite.svg#vscode"></use>
-          </svg>
-        </li>{" "}
-        <li className="stack__item">
-          <svg className="stack__svg">
-            <use href="./assets/sprite.svg#github"></use>
-          </svg>
-        </li>{" "}
-        <li className="stack__item">
-          <svg className="stack__svg">
             <use href="./assets/sprite2.svg#mongodb"></use>
           </svg>
-        </li>{" "}
+        </li>
+        <li className="stack__item">
+          <svg className="stack__svg">
+            <use href="./assets/sprite2.svg#parcel"></use>
+          </svg>
+        </li>
         <li className="stack__item">
           <svg className="stack__svg">
             <use href="./assets/sprite2.svg#webpack"></use>
@@ -72,7 +77,17 @@ const StackList = () => {
         </li>
         <li className="stack__item">
           <svg className="stack__svg">
-            <use href="./assets/sprite2.svg#parcel"></use>
+            <use href="./assets/sprite2.svg#figma"></use>
+          </svg>
+        </li>
+        <li className="stack__item">
+          <svg className="stack__svg">
+            <use href="./assets/sprite2.svg#postman"></use>
+          </svg>
+        </li>
+        <li className="stack__item">
+          <svg className="stack__svg">
+            <use href="./assets/sprite2.svg#bootstrap"></use>
           </svg>
         </li>
       </ul>

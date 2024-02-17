@@ -8,8 +8,7 @@ const Hero = () => {
           <h1 className="hero__title">
             Привіт
             <br /> Мене звати Іра.
-            <br /> Я
-            <span className="hero__title-name">Junior Frontend developer</span>
+            <br /> Я  <span className="hero__title-name">Junior Frontend developer</span>
           </h1>
         </div>
         <div className="hero__img-wrapper">
