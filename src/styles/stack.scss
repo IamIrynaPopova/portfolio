@@ -1,0 +1,24 @@
+.section-stack {
+  padding: 60px 0;
+}
+
+.stack {
+}
+.stack__title {
+}
+.stack__text {
+}
+
+.stack__list {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  justify-items: center;
+}
+
+.stack__item {
+}
+
+.stack__svg {
+  width: 100px;
+  height: 100px;
+}
