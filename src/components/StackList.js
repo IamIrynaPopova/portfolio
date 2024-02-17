@@ -54,6 +54,26 @@ const StackList = () => {
           <svg className="stack__svg">
             <use href="./assets/sprite.svg#vscode"></use>
           </svg>
+        </li>{" "}
+        <li className="stack__item">
+          <svg className="stack__svg">
+            <use href="./assets/sprite.svg#github"></use>
+          </svg>
+        </li>{" "}
+        <li className="stack__item">
+          <svg className="stack__svg">
+            <use href="./assets/sprite2.svg#mongodb"></use>
+          </svg>
+        </li>{" "}
+        <li className="stack__item">
+          <svg className="stack__svg">
+            <use href="./assets/sprite2.svg#webpack"></use>
+          </svg>
+        </li>
+        <li className="stack__item">
+          <svg className="stack__svg">
+            <use href="./assets/sprite2.svg#parcel"></use>
+          </svg>
         </li>
       </ul>
     </div>
