@@ -49,7 +49,7 @@ const StackList = () => {
           <svg className="stack__svg">
             <use href="./assets/sprite.svg#nodejs"></use>
           </svg>
-        </li>{" "}
+        </li>
         <li className="stack__item">
           <svg className="stack__svg">
             <use href="./assets/sprite.svg#vscode"></use>
