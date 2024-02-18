@@ -1,4 +1,5 @@
 import human from "./assets/human.jpg";
+import portfolio from "./assets/portfolio.jpg";
 import sprite from "./assets/sprite.svg";
 import sprite2 from "./assets/sprite2.svg";
 import css from "./styles/main.scss";
