@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Project Portfolio",
+    "photo": "./assets/portfolio.jpg",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998592.png",
+    "text": "Website of a web application development and design studio. Effective solutions for your business. Website with adaptive layout.",
+    "stack": "HTML, SASS, CSS, JavaScript"
+  },
+  {
+    "name": "Project Portfolio",
+    "photo": "./assets/portfolio.jpg",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998592.png",
+    "text": "Website of a web application development and design studio. Effective solutions for your business. Website with adaptive layout.",
+    "stack": "HTML, SASS, CSS, JavaScript"
+  },
+  {
+    "name": "Project Portfolio",
+    "photo": "./assets/portfolio.jpg",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998592.png",
+    "text": "Website of a web application development and design studio. Effective solutions for your business. Website with adaptive layout.",
+    "stack": "HTML, SASS, CSS, JavaScript"
+  },
+  {
+    "name": "Project Portfolio",
+    "photo": "./assets/portfolio.jpg",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998592.png",
+    "text": "Website of a web application development and design studio. Effective solutions for your business. Website with adaptive layout.",
+    "stack": "HTML, SASS, CSS, JavaScript"
+  }
+]
