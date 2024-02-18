@@ -1,13 +1,14 @@
-.section-stack {
+.stack {
   padding: 60px 30px;
 }
 
-.stack {
+.stack__title-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .stack__title {
+    font-family: "Kanit-Bold";
   font-size: 40px;
   font-weight: 600;
   line-height: 1.2;

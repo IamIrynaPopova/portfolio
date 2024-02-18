@@ -2,8 +2,8 @@ import React from "react";
 
 const AppBar = () => {
   return (
-    <div className="section-header container">
-      <header className="header">
+    <div className="header container">
+      <header className="header__wrapper">
         <nav className="nav">
           <ul className="nav__list">
             <li className="nav__list__item">Про мене</li>

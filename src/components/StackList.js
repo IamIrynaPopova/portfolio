@@ -2,8 +2,8 @@ import React from "react";
 
 const StackList = () => {
   return (
-    <div className="section-stack container">
-      <div className="stack">
+    <div className="stack container">
+      <div className="stack__title-wrapper">
         <h2 className="stack__title">Мій технічний стек</h2>
         <p className="stack__text">
           Технології, з якими я працюю останнім часом
