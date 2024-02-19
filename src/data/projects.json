@@ -1,19 +1,19 @@
 [
   {
-    "photo": "./assets/portfolio.jpg",
-    "name": "Portfolio",
-    "text": "Сайт студії розробки та дизайну веб-додатків. Ефективні рішення для вашого бізнесу. Сайт з адаптивною версткою.",
-    "stack": "HTML, SASS, CSS, JavaScript",
-    "link": "https://iamirynapopova.github.io/goit-markup-hw-08/",
-    "code": "https://github.com/IamIrynaPopova/goit-markup-hw-08"
+    "photo": "./assets/news.jpg",
+    "name": "News",
+    "text": "Сайт для пошуку новин. Це наш командний проєкт. Моя частина - блок з календарем.",
+    "stack": "HTML, SASS, Parcel, JavaScript",
+    "link": "https://villiav.github.io/news/",
+    "code": "https://github.com/IamIrynaPopova/news"
   },
   {
-    "photo": "./assets/portfolio.jpg",
-    "name": "Portfolio",
-    "text": "Сайт студії розробки та дизайну веб-додатків. Ефективні рішення для вашого бізнесу. Сайт з адаптивною версткою.",
-    "stack": "HTML, SASS, CSS, JavaScript",
-    "link": "https://iamirynapopova.github.io/goit-markup-hw-08/",
-    "code": "https://github.com/IamIrynaPopova/goit-markup-hw-08"
+    "photo": "./assets/foodSTA.jpg",
+    "name": "FoodSTA",
+    "text": "Сайт ресторанного кафе. Кафе готує вишукані страви на будь-який смак. Це командний проект. Мої розділи - Клієнти.",
+    "stack": "HTML, SASS, Parcel, JavaScript",
+    "link": "https://maximkarlov.github.io/FoodSTA_UTF-8/",
+    "code": "https://github.com/IamIrynaPopova/FoodSTA_UTF-8"
   },
   {
     "photo": "./assets/portfolio.jpg",

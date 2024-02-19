@@ -6,11 +6,13 @@ const ProjectsList = ({ projects }) => {
     <div className="projects container">
       <div className="projects__title-wrapper">
         <h2 className="projects__title">Мої проєкти</h2>
-        <p className="projects__text">сайти, над якими я працювала сама та в команді</p>
+        <p className="projects__text">
+          сайти, над якими я працювала сама та в команді
+        </p>
       </div>
       <div className="projects__list-wrapper">
         <ul className="projects__list">
-          {projects.map(({ name, photo, text, stack,link, code }) => (
+          {projects.map(({ name, photo, text, stack, link, code }) => (
             <li className="projects__item" key={uuidv1()}>
               <img className="projects__image" src={photo} alt={name} />
               <div className="projects__box">
@@ -23,6 +25,7 @@ const ProjectsList = ({ projects }) => {
                 <ul className="projects__links">
                   <li className="projects__links-item">
                     <a
+                      target="blank"
                       href={link}
                       className="projects__link-code"
                     >
@@ -34,6 +37,7 @@ const ProjectsList = ({ projects }) => {
                   </li>
                   <li className="projects__links-item">
                     <a
+                      target="blank"
                       href={code}
                       className="projects__link-code"
                     >
