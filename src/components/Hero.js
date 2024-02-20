@@ -9,13 +9,14 @@ const Hero = () => {
             <h1 className="hero__title">
               Привіт
               <br /> Мене звати Іра.
-              <br /> Я <span className="hero__title-name">
+              <br /> Я{" "}
+              <span className="hero__title-name">
                 Junior Frontend developer
               </span>
             </h1>
           </div>
           <div className="hero__img-wrapper">
-            <img className="hero__img" src="./assets/human.jpg" alt="photo" />
+            {/* <img className="hero__img" src="./assets/human.jpg" alt="photo" /> */}
           </div>
         </div>
       </div>
