@@ -29,11 +29,14 @@
 }
 
 .stack__item {
-
+  // transition-property: box-shadow;
+  // transition-duration: 250ms;
+  // transition-timing-function: linear;
 }
 
-.stack__item:hover,.stack__item:focus {
-
+.stack__item:hover,
+.stack__item:focus {
+  // box-shadow: 0px 0px 30px 5px #1161bd;
 }
 
 .stack__svg {
