@@ -26,6 +26,11 @@
   margin-right: 20px;
 }
 
+.nav__list__item:hover,
+.nav__list__item:focus {
+  color: #a0cafb;
+}
+
 .nav__contacts {
   display: flex;
   align-items: center;
@@ -49,6 +54,11 @@
   width: 30px;
   height: 30px;
   fill: #42446e;
+}
+
+.nav__contacts__svg:hover,
+.nav__contacts__svg:focus {
+  fill: #a0cafb;
 }
 
 .human {

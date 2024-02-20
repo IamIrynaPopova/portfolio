@@ -29,43 +29,9 @@
   -webkit-text-fill-color: transparent;
 }
 
-// .hero__img-wrapper {
-//   position: relative;
-//   border-radius: 50%;
-//   overflow: hidden;
-// }
-// .hero__img-wrapper::before {
-//   content: "";
-//   position: absolute;
-//   inset: 0;
-//   border-radius: 50%;
-//   padding: 10px;
-//   background: linear-gradient(to top, #ffd700, #0057b8);
-//   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-//   mask-composite: exclude;
-
-// }
-
-// .hero__img-wrapper {
-//   position: relative;
-//   border-radius: 50%;
-//   overflow: hidden;
-// }
-
-// .hero__img {
-//   width: 350px;
-//   height: auto;
-// }
-
-// .hero__img {
-//   width: 350px;
-//   height: auto;
-// }
-
 .hero__img-wrapper {
   width: 350px;
   height: 350px;
-  background-color: white;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
@@ -77,7 +43,7 @@
 .hero__img-wrapper::before {
   content: " ";
   position: absolute;
-  width: 355px;
+  width: 350px;
   height: 100%;
   background: linear-gradient(to top, #ffd700, #0057b8);
   animation: animate 4s linear infinite;
@@ -89,12 +55,12 @@
   border-radius: 50%;
   background-image: url(../assets/human.jpg);
   background-size: cover;
-  width: 340px;
-  height: 340px;
+  width: 330px;
+  height: 330px;
 }
 
 @keyframes animate {
-  50% {
+  0% {
     transform: rotate(0deg);
   }
   100% {

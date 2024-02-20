@@ -8,7 +8,7 @@
   align-items: center;
 }
 .stack__title {
-    font-family: "Kanit-Bold";
+  font-family: "Kanit-Bold";
   font-size: 40px;
   font-weight: 600;
   line-height: 1.2;
@@ -29,6 +29,11 @@
 }
 
 .stack__item {
+
+}
+
+.stack__item:hover,.stack__item:focus {
+
 }
 
 .stack__svg {
