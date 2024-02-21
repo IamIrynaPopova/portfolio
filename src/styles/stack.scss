@@ -21,11 +21,17 @@
   margin-bottom: 30px;
 }
 
+.stack__list-box {
+  padding: 50px;
+  background-color: rgba(73, 129, 193, 0.126);
+}
+
 .stack__list {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-row-gap: 20px;
   justify-items: center;
+  // background-color: white;
 }
 
 .stack__item {
@@ -40,6 +46,6 @@
 }
 
 .stack__svg {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
