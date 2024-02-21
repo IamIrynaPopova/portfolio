@@ -3,12 +3,12 @@
   margin: 0 auto;
   padding: 8px 16px;
   border-radius: 5px;
-  background-color: #42446e;
+  background-color: var(--main-color);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
   display: flex;
   justify-content: center;
-  color: #fff;
+  color: var(--light-text);
   border: 0;
   cursor: pointer;
   font-family: inherit;
@@ -16,12 +16,12 @@
   line-height: 1.2;
   font-weight: 500;
   min-width: 180px;
-  box-shadow: 0px 5px 10px 0px #42446e;
+  box-shadow: 0px 5px 10px 0px var(--main-color);
 }
 
 .button:hover,
 .button:focus {
-  background-color: #a0cafb;
-  color: #42446e;
-  box-shadow: 0px 5px 10px 0px #1161bd;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  box-shadow: 0px 5px 10px 0px var(--light-hover);
 }

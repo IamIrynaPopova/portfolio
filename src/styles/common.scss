@@ -20,11 +20,19 @@
   font-style: normal;
 }
 
-body {
-  color:  #42446e;
-  font-family: "Kanit-Light", sans-serif;
+:root {
+  --main-color: #42446e;
+  --secondary-color: #a0cafb;
+  --light-text: #fff;
+  --light-hover: #1161bd;
+  --dark-hover: rgba(0, 0, 0, 0.5);
+  --secondary-light-color: #d7e7fa87;
 }
 
+body {
+  color: var(--main-color);
+  font-family: "Kanit-Light", sans-serif;
+}
 
 a,
 p,
@@ -39,7 +47,7 @@ img,
 ol {
   margin: 0;
   padding: 0;
-      font-size: 1em;
+  font-size: 1em;
 }
 
 ul,

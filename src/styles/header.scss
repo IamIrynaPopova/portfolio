@@ -28,7 +28,7 @@
 
 .nav__list__item:hover,
 .nav__list__item:focus {
-  color: #a0cafb;
+  color:  var(--secondary-color);
 }
 
 .nav__contacts {
@@ -53,12 +53,12 @@
 .nav__contacts__svg {
   width: 30px;
   height: 30px;
-  fill: #42446e;
+  fill:  var(--main-color);
 }
 
 .nav__contacts__svg:hover,
 .nav__contacts__svg:focus {
-  fill: #a0cafb;
+  fill:  var(--secondary-color);
 }
 
 .human {
