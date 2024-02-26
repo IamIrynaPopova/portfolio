@@ -26,7 +26,7 @@ module.exports = (env) => {
         directory: path.join(__dirname, "src"),
       },
       compress: true,
-      port: 3000,
+      port: 2525,
       open: true,
       hot: true,
       historyApiFallback: true,
