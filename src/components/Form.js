@@ -1,3 +1,4 @@
+import React from "react";
 import { useForm } from "react-hook-form";
 
 const Form = ({ onSubmit }) => {
@@ -16,7 +17,6 @@ const Form = ({ onSubmit }) => {
     for (let i = 0; i < arrayValue.length; i++) {
       if (value === "" || arrayValue.length < 4) {
         e.target.value = defaultValue;
-     
       } else if (arrayValue[7] === ")") {
         arrayValue.splice(7, 1);
         return arrayValue;
