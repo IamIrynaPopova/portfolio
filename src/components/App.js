@@ -26,10 +26,9 @@ const App = () => {
   const handleSubmitForm = async () => {
     setFormSubmit(true);
     Email.send({
-      // Host: "smtp.elasticemail.com",
-      SecureToken: "58f3c4f1-de55-41f0-b510-d1ef5b40dcf9",
+      SecureToken: process.env.REACT_APP_TOKEN,
       Username: "popovaira969@gmail.com",
-      Password: "041AA71E6A014708EDA813153B2B5D847625",
+      Password: process.env.REACT_APP_PASSWORD,
       To: "popovaira969@gmail.com",
       From: "popovaira969@gmail.com",
       Subject: "This is the subject",
