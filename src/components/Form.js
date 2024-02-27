@@ -1,11 +1,10 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
-const Form = ({ onSubmit }) => {
+const Form = ({ onSubmitForm }) => {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm();
 
@@ -29,16 +28,9 @@ const Form = ({ onSubmit }) => {
     }
   };
 
-  const handleOnSubmit = (data, e) => {
-    e.preventDefault();
-    reset();
-    onSubmit();
-    console.log(data);
-  };
-
   return (
     <div className="container">
-      <form className="form" onSubmit={handleSubmit(handleOnSubmit)}>
+      <form className="form" onSubmit={handleSubmit(onSubmitForm)}>
         <p className="form__title">
           Напиши мені, якщо тобі сподобались мої роботи 😉
         </p>
