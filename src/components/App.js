@@ -38,32 +38,29 @@ const App = () => {
     // });
     e.preventDefault();
     console.log(data);
-    
+
     e.target.reset();
+    setFormSubmit(true);
+
+    try {
+      const response = await fetch("http://localhost:3001/api", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json; charset=UTF-8",
+        },
+      });
+
+      if (response.ok) {
+        alert("Дані успішно відправлені");
+        e.target.reset();
         setFormSubmit(true);
-
-    // try {
-    //   const response = await fetch(
-    //     "https://github.com/IamIrynaPopova/backend-portfolio",
-    //     {
-    //       method: "GET",
-    //       body: data,
-    //       headers: {
-    //         "Content-Type": "application/json; charset=UTF-8",
-    //       },
-    //     }
-    //   );
-
-    //   if (response.ok) {
-    //     console.log("Данные успешно отправлены");
-    //     e.target.reset();
-    //     setFormSubmit(true);
-    //   } else {
-    //     console.error("Ошибка при отправке данных");
-    //   }
-    // } catch (error) {
-    //   console.error("Произошла ошибка:", error);
-    // }
+      } else {
+        alert("Помилка відправки данних");
+      }
+    } catch (error) {
+      alert("Виникла помилка:", error);
+    }
   };
 
   return (
