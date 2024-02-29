@@ -41,8 +41,8 @@ const Form = ({ onSubmitForm }) => {
                 {...register("name", {
                   required: true,
                   minLength: {
-                    value: 4,
-                    message: "Має складатись мінімум з 4x літер",
+                    value: 3,
+                    message: "Має складатись мінімум з 3x літер",
                   },
                 })}
                 className="form__input"

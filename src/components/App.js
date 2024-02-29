@@ -24,23 +24,7 @@ const App = () => {
   useEffect(() => {}, [visibleProjects]);
 
   const handleSubmitForm = async (data, e) => {
-    // Email.send({
-    //    SecureToken: "58f3c4f1-de55-41f0-b510-d1ef5b40dcf9",
-    //   Username: "popovaira969@gmail.com",
-    //   Password: "041AA71E6A014708EDA813153B2B5D847625",
-    //   To: "popovaira969@gmail.com",
-    //   From: "popovaira969@gmail.com",
-    //   Subject: "This is the subject",
-    //   Body: "And this is the body",
-    // }).then((message) => {
-    //   console.log(message);
-    //   alert(message);
-    // });
     e.preventDefault();
-    console.log(data);
-
-    e.target.reset();
-    setFormSubmit(true);
 
     try {
       const response = await fetch("http://localhost:3001/api", {
@@ -52,9 +36,11 @@ const App = () => {
       });
 
       if (response.ok) {
-        alert("Дані успішно відправлені");
+        const responseData = await response.json();
+        const message = await JSON.stringify(responseData.message);
         e.target.reset();
         setFormSubmit(true);
+        alert(message);
       } else {
         alert("Помилка відправки данних");
       }
