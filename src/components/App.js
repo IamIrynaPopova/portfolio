@@ -27,7 +27,7 @@ const App = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3001/api", {
+      const response = await fetch("https://backend-portfolio-cuv6.onrender.com/api", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
