@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Sixtyfour";
-  src: url("./fonts/Sixtyfour-Regular-VariableFont_BLED_SCAN.woff")
-    format("woff");
+  src: url("./fonts/Sixtyfour-Regular-VariableFont_BLED_SCAN.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -68,5 +67,8 @@ img {
 }
 
 .container {
-  margin: 0 100px 0 100px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
 }

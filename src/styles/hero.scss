@@ -1,9 +1,9 @@
-.section-hero {
-  background: linear-gradient(160deg, #4981c1, #f0f8ff);
-}
-
 .hero {
-  padding: 60px 30px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: linear-gradient(160deg, #4981c1, #f0f8ff);
 }
 
 .hero-wrapper {
@@ -13,7 +13,7 @@
 }
 
 .hero__title-wrapper {
-  width: 650px;
+  width: 600px;
 }
 
 .hero__title {
@@ -44,7 +44,7 @@
   content: " ";
   position: absolute;
   width: 350px;
-  height: 100%;
+  height: 350px;
   background: linear-gradient(to top, #ffd700, #0057b8);
   animation: animate 4s linear infinite;
 }

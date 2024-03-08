@@ -2,8 +2,8 @@ import React from "react";
 
 const AppBar = () => {
   return (
-    <div className="header container">
-      <header className="header__wrapper">
+    <header className="header ">
+      <div className="header__wrapper container">
         <nav className="nav">
           <ul className="nav__list">
             <li className="nav__list__item">Про мене</li>
@@ -44,8 +44,8 @@ const AppBar = () => {
             </li>
           </ul>
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
   );
 };
 

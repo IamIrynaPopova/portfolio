@@ -1,5 +1,6 @@
 .stack {
-  padding: 60px 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .stack__title-wrapper {
@@ -21,7 +22,7 @@
   margin-bottom: 30px;
 }
 
-.stack__list-box {
+.stack__list-wrapper {
   padding: 50px;
   background-color: var(--secondary-light-color);
 }

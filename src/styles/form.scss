@@ -1,5 +1,9 @@
 .form {
-  padding: 60px 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.form-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +14,7 @@
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 20px;
-  }
+}
 
 .form__list {
   width: 500px;
@@ -41,8 +45,6 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
 .form__input::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
@@ -69,7 +71,6 @@
   border-bottom: 2px solid var(--main-color);
 
   font-style: normal;
-  // font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }

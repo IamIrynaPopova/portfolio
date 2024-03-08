@@ -1,0 +1,17 @@
+.footer {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.footer-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer__divider {
+  background-color: var(--dark-hover);
+  box-shadow: 0px 5px 10px 0px var(--dark-hover);
+  width: 1200px;
+  height: 2px;
+}
+

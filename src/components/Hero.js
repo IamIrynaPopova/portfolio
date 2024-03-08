@@ -2,9 +2,8 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="section-hero">
-      <div className="hero container">
-        <div className="hero-wrapper">
+    <section className="hero">
+        <div className="hero-wrapper container">
           <div className="hero__title-wrapper">
             <h1 className="hero__title">
               Привіт
@@ -16,9 +15,8 @@ const Hero = () => {
             </h1>
           </div>
           <div className="hero__img-wrapper"></div>
-        </div>
-      </div>
-    </div>
+              </div>
+    </section>
   );
 };
 

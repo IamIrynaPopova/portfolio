@@ -6,6 +6,7 @@ import StackList from "./StackList";
 import ProjectsList from "./ProjectsList";
 import Button from "./Button";
 import Form from "./Form";
+import Footer from "./Footer";
 import About from "./About";
 import projects from "../data/projects.json";
 
@@ -27,13 +28,16 @@ const App = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://backend-portfolio-cuv6.onrender.com/api", {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: {
-          "Content-Type": "application/json; charset=UTF-8",
-        },
-      });
+      const response = await fetch(
+        "https://backend-portfolio-cuv6.onrender.com/api",
+        {
+          method: "POST",
+          body: JSON.stringify(data),
+          headers: {
+            "Content-Type": "application/json; charset=UTF-8",
+          },
+        }
+      );
 
       if (response.ok) {
         const responseData = await response.json();
@@ -59,6 +63,7 @@ const App = () => {
         <Button onLoadMore={loadMore} />
       )}
       <Form onSubmitForm={handleSubmitForm} />
+      <Footer />
     </>
   );
 };

@@ -1,8 +1,9 @@
 .header {
-  padding: 20px 30px;
-}
-
-.header__wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--dark-hover);
 }
 
 .nav {
@@ -28,7 +29,7 @@
 
 .nav__list__item:hover,
 .nav__list__item:focus {
-  color:  var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .nav__contacts {
@@ -53,12 +54,12 @@
 .nav__contacts__svg {
   width: 30px;
   height: 30px;
-  fill:  var(--main-color);
+  fill: var(--main-color);
 }
 
 .nav__contacts__svg:hover,
 .nav__contacts__svg:focus {
-  fill:  var(--secondary-color);
+  fill: var(--secondary-color);
 }
 
 .human {
