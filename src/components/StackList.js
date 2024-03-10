@@ -2,7 +2,7 @@ import React from "react";
 
 const StackList = () => {
   return (
-    <section className="stack">
+    <section id="stack" className="stack">
       <div className="stack-wrapper container">
         <div className="stack__title-wrapper">
           <h2 className="stack__title">Мій технічний стек</h2>

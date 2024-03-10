@@ -6,10 +6,26 @@ const AppBar = () => {
       <div className="header__wrapper container">
         <nav className="nav">
           <ul className="nav__list">
-            <li className="nav__list__item">Про мене</li>
-            <li className="nav__list__item">Навички</li>
-            <li className="nav__list__item">Портфоліо</li>
-            <li className="nav__list__item">Контакти</li>
+            <li>
+              <a className="nav__list__item" href="">
+                Про мене
+              </a>
+            </li>
+            <li>
+              <a className="nav__list__item" href="#stack">
+                Навички
+              </a>
+            </li>
+            <li>
+              <a className="nav__list__item" href="#project">
+                Портфоліо
+              </a>
+            </li>
+            <li>
+              <a className="nav__list__item" href="#form">
+                Контакти
+              </a>
+            </li>
           </ul>
           <ul className="nav__contacts">
             <li className="nav__contacts__item">

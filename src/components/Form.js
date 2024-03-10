@@ -29,7 +29,7 @@ const Form = ({ onSubmitForm }) => {
   };
 
   return (
-    <section className="form">
+    <section id="form" className="form">
       <div className="form-wrapper container">
         <form onSubmit={handleSubmit(onSubmitForm)}>
           <p className="form__title">

@@ -3,7 +3,7 @@ import { v1 as uuidv1 } from "uuid";
 
 const ProjectsList = ({ projects }) => {
   return (
-    <section className="projects ">
+    <section id="project" className="projects ">
       <div className="projects-wrapper container">
         <div className="projects__title-wrapper">
           <h2 className="projects__title">Мої проєкти</h2>
