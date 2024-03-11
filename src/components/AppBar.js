@@ -1,4 +1,5 @@
 import React from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const AppBar = () => {
   return (
@@ -27,6 +28,7 @@ const AppBar = () => {
               </a>
             </li>
           </ul>
+          <ThemeToggle />
           <ul className="nav__contacts">
             <li className="nav__contacts__item">
               <a

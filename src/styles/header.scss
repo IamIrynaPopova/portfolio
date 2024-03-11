@@ -9,6 +9,7 @@
 .nav {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .nav__list {
@@ -28,6 +29,35 @@
 .nav__list__item:hover,
 .nav__list__item:focus {
   color: var(--secondary-color);
+}
+
+.theme {
+  margin-right: 20px;
+}
+
+.theme__button {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid var(--main-color);
+  padding: 4px;
+  cursor: pointer;
+  background-color: transparent;
+  
+}
+
+.theme__switch {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  left: 0;
+  top: 2px;
+  background-color: var(--main-color);
+  // transform: translateX(25px);
+  // transition-duration: 200ms;
+
 }
 
 .nav__contacts {

@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { StrictMode } from "react";
+import theme from  "./components/ThemeToggle"
 import App from "./components/App";
 import human from "./assets/human.jpg";
 import portfolio from "./assets/portfolio.jpg";

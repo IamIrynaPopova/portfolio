@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect} from "react";
 import AppBar from "./AppBar";
 import Hero from "./Hero";
 import StackList from "./StackList";
@@ -8,11 +8,15 @@ import Button from "./Button";
 import Form from "./Form";
 import Footer from "./Footer";
 import About from "./About";
+import ThemeToggle from "./ThemeToggle";
 import projects from "../data/projects.json";
 
 const App = () => {
+ 
   const [visibleProjects, setVisibleProjects] = useState(projects.slice(0, 3));
   const [formSubmit, setFormSubmit] = useState(false);
+  
+
 
   const loadMore = () => {
     const nextProjects = projects.slice(
@@ -56,7 +60,8 @@ const App = () => {
   return (
     <>
       <AppBar />
-      <Hero />
+  
+         <Hero />
       <StackList />
       <ProjectsList projects={visibleProjects} />
       {visibleProjects.length !== projects.length && (

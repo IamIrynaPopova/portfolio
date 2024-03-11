@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Sixtyfour";
-  src: url("./fonts/Sixtyfour-Regular-VariableFont_BLED_SCAN.woff") format("woff");
+  src: url("./fonts/Sixtyfour-Regular-VariableFont_BLED_SCAN.woff")
+    format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -20,12 +21,12 @@
 }
 
 :root {
-  --main-color: #42446e;
-  --secondary-color: #a0cafb;
-  --light-text: #fff;
-  --light-hover: #1161bd;
-  --dark-hover: rgba(0, 0, 0, 0.5);
-  --secondary-light-color: #d7e7fa87;
+  // --main-color: #42446e;
+  // --secondary-color: #a0cafb;
+  // --light-text: #fff;
+  // --light-hover: #1161bd;
+  // --dark-hover: rgba(0, 0, 0, 0.5);
+  // --secondary-light-color: #d7e7fa87;
 }
 
 body {
@@ -71,4 +72,18 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
+}
+
+html[data-theme="dark"] {
+  --main-color: #93a8c0;
+  background-color: #453f3f;
+}
+
+html[data-theme="light"] {
+  --main-color: #42446e;
+  --secondary-color: #a0cafb;
+  --light-text: #fff;
+  --light-hover: #1161bd;
+  --dark-hover: rgba(0, 0, 0, 0.5);
+  --secondary-light-color: #d7e7fa87;
 }
