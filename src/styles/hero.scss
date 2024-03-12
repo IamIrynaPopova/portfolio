@@ -1,6 +1,5 @@
 .hero {
-  max-width: 1600px;
-  margin: 0 auto;
+   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
   background: linear-gradient(160deg, #4981c1, #f0f8ff);
@@ -10,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+ 
 }
 
 .hero__title-wrapper {

@@ -71,7 +71,7 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  min-width: 1200px;
 }
 
 html[data-theme="dark"] {
