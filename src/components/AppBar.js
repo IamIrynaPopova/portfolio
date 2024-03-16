@@ -28,8 +28,9 @@ const AppBar = () => {
               </a>
             </li>
           </ul>
-          <ThemeToggle />
-          <ul className="nav__contacts">
+        </nav>
+        <div className="nav__contacts">
+          <ul className="nav__contacts-list">
             <li className="nav__contacts__item">
               <a
                 href="https://github.com/IamIrynaPopova"
@@ -61,7 +62,8 @@ const AppBar = () => {
               </a>
             </li>
           </ul>
-        </nav>
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   );

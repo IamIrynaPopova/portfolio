@@ -69,21 +69,24 @@ img {
 
 .container {
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  min-width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 html[data-theme="dark"] {
-  --main-color: #93a8c0;
+  --main-color: #ffffffd4;
   background-color: #453f3f;
+  --secondary-color: #5d99dd;
+  --secondary-light-color: #ffffff;
+  --main-hover: #ffffffd4;
+  --second-hover: #0a79f7;
 }
 
 html[data-theme="light"] {
   --main-color: #42446e;
   --secondary-color: #a0cafb;
   --light-text: #fff;
-  --light-hover: #1161bd;
-  --dark-hover: rgba(0, 0, 0, 0.5);
+  --second-hover: #1161bd;
+  --main-hover: rgba(0, 0, 0, 0.5);
   --secondary-light-color: #d7e7fa87;
 }

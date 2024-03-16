@@ -28,7 +28,7 @@
 .form__wrap:hover {
   cursor: pointer;
   border-color: var(--main-color);
-  box-shadow: 0px 5px 10px 0px var(--light-hover);
+  box-shadow: 0px 5px 10px 0px var(--second-hover);
 }
 
 .form__input {
@@ -105,5 +105,5 @@
 .button:focus {
   background-color: var(--secondary-color);
   color: var(--main-color);
-  box-shadow: 0px 5px 10px 0px var(--light-hover);
+  box-shadow: 0px 5px 10px 0px var(--second-hover);
 }
