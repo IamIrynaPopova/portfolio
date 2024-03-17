@@ -15,6 +15,7 @@
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .form__list {
@@ -27,8 +28,7 @@
 
 .form__wrap:hover {
   cursor: pointer;
-  border-color: var(--main-color);
-  box-shadow: 0px 5px 10px 0px var(--second-hover);
+  box-shadow: -3px 3px 3px 0px var(--second-hover);
 }
 
 .form__input {
@@ -44,10 +44,22 @@
   border-bottom: 2px solid var(--main-color);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: inherit;
+  color: inherit;
+}
+
+.form__input:hover,
+.form__textarea:hover {
+  border-left: 2px solid var(--second-hover);
+  border-bottom: 2px solid var(--second-hover);
 }
 
 .form__input::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+
+html[data-theme="dark"] .form__input::placeholder {
+  color: rgba(225, 221, 221, 0.707);
 }
 
 .form__message {
@@ -67,9 +79,10 @@
   margin-bottom: 20px;
   outline: none;
   border: 0;
-
   border-left: 2px solid var(--main-color);
   border-bottom: 2px solid var(--main-color);
+  background-color: inherit;
+  color: inherit;
 
   font-style: normal;
   line-height: 1.17;
@@ -98,12 +111,12 @@
   line-height: 1.2;
   font-weight: 500;
   min-width: 180px;
-  box-shadow: 0px 5px 10px 0px var(--main-color);
+  box-shadow: 0px 0px 10px 0px var(--main-color);
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--secondary-color);
   color: var(--main-color);
-  box-shadow: 0px 5px 10px 0px var(--second-hover);
+  box-shadow: 0px 0px 10px 0px var(--second-hover);
 }

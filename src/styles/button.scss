@@ -16,12 +16,16 @@
   line-height: 1.2;
   font-weight: 500;
   min-width: 180px;
-  box-shadow: 0px 5px 10px 0px var(--main-color);
+  box-shadow: 0px 0px 10px 0px var(--main-color);
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--secondary-color);
   color: var(--main-color);
-  box-shadow: 0px 5px 10px 0px var(--second-hover);
+  box-shadow: 0px 0px 10px 0px var(--second-hover);
+}
+
+html[data-theme="dark"] .button {
+  background-color: #42446e;
 }

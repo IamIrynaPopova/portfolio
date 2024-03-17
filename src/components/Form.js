@@ -8,33 +8,11 @@ const Form = ({ onSubmitForm }) => {
     formState: { errors },
   } = useForm();
 
-  const handleTelChange = (e) => {
-    const value = e.target.value;
-    const arrayValue = value.split("");
-    const defaultValue = e.target.defaultValue;
-
-    for (let i = 0; i < arrayValue.length; i++) {
-      if (value === "" || arrayValue.length < 4) {
-        e.target.value = defaultValue;
-      } else if (arrayValue[7] === ")") {
-        arrayValue.splice(7, 1);
-        return arrayValue;
-      } else if (i === 7) {
-        arrayValue.splice(7, 0, ")");
-        const newValue = arrayValue.join("");
-        e.target.value = newValue;
-        return;
-      }
-    }
-  };
-
   return (
     <section id="form" className="form">
       <div className="form-wrapper container">
         <form onSubmit={handleSubmit(onSubmitForm)}>
-          <p className="form__title">
-            Напиши мені, якщо тобі сподобались мої роботи 😉
-          </p>
+          <p className="form__title">Напиcати мені можна тут 👇</p>
           <ul className="form__list">
             <li className="form__item">
               <div className="form__wrap">
@@ -61,7 +39,7 @@ const Form = ({ onSubmitForm }) => {
                   {...register("tel", {
                     required: true,
                     pattern: {
-                      value: /^\+\d{2}\(\d{3}\)\d{7}$/,
+                      value: /^[\d()+]+$/,
                       message: "Ви ввели не вірний номер ",
                     },
                   })}
@@ -69,8 +47,7 @@ const Form = ({ onSubmitForm }) => {
                   type="tel"
                   id="tel"
                   name="tel"
-                  defaultValue="+38("
-                  onChange={handleTelChange}
+                  placeholder="Tel"
                 />
               </div>
               <p className="form__message">{errors.tel?.message}</p>
