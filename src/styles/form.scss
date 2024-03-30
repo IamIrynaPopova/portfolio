@@ -26,7 +26,8 @@
   margin-bottom: 10px;
 }
 
-.form__wrap:hover {
+.form__wrap:hover,
+.form__wrap:focus {
   cursor: pointer;
   box-shadow: -3px 3px 3px 0px var(--second-hover);
 }
@@ -49,7 +50,9 @@
 }
 
 .form__input:hover,
-.form__textarea:hover {
+.form__input:focus,
+.form__textarea:hover,
+.form__textarea:focus {
   border-left: 2px solid var(--second-hover);
   border-bottom: 2px solid var(--second-hover);
 }

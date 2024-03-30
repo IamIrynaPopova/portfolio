@@ -17,6 +17,7 @@
   line-height: 1.2;
   margin-bottom: 10px;
 }
+
 .projects__text {
   font-size: 20px;
   font-weight: 400;
@@ -24,8 +25,7 @@
   margin-bottom: 30px;
 }
 
-.projects__list-wrapper {
-}
+.projects__list-wrapper {}
 
 .projects__list {
   display: grid;
@@ -99,6 +99,7 @@
 .projects__stack-title {
   font-family: "Kanit-Bold";
 }
+
 .projects__stack span {
   font-weight: bold;
 }
