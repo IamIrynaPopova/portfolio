@@ -15,7 +15,11 @@ const ThemeToggle = () => {
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     const switcher = document.getElementById("switch");
+    const switcherButton = document.getElementById("switchButton");
+    switcherButton.classList.add("active");
+
     setTheme(newTheme);
+
     localStorage.setItem("theme", newTheme);
     if (newTheme === "dark") {
       switcher.style.transform = "translateX(100%)";
@@ -25,7 +29,12 @@ const ThemeToggle = () => {
   };
   return (
     <div className="theme">
-      <button onClick={toggleTheme} type="button" className=" theme__button">
+      <button
+        id="switchButton"
+        onClick={toggleTheme}
+        type="button"
+        className=" theme__button"
+      >
         <div id="switch" className="theme__switch"></div>
       </button>
     </div>
@@ -33,4 +42,3 @@ const ThemeToggle = () => {
 };
 
 export default ThemeToggle;
-

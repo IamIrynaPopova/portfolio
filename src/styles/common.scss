@@ -1,12 +1,4 @@
 @font-face {
-  font-family: "Sixtyfour";
-  src: url("./fonts/Sixtyfour-Regular-VariableFont_BLED_SCAN.woff")
-    format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Kanit-Light";
   src: url("./fonts/Kanit-Light.woff") format("woff");
   font-weight: 600;
@@ -20,14 +12,6 @@
   font-style: normal;
 }
 
-:root {
-  // --main-color: #42446e;
-  // --secondary-color: #a0cafb;
-  // --light-text: #fff;
-  // --light-hover: #1161bd;
-  // --dark-hover: rgba(0, 0, 0, 0.5);
-  // --secondary-light-color: #d7e7fa87;
-}
 
 body {
   color: var(--main-color);
