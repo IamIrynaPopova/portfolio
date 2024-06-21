@@ -4,7 +4,7 @@ import ThemeToggle from "./ThemeToggle";
 const AppBar = () => {
   return (
     <header className="header ">
-      <div className="header__wrapper container">
+      <div className="header__wrapper container ">
         <nav className="nav">
           <ul className="nav__list">
             <li>

@@ -1,18 +1,6 @@
 .footer {
-    margin: 0 auto;
-}
-
-.footer-wrapper {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.footer__divider {
   background-color: var(--main-hover);
   box-shadow: 0px 5px 10px 0px var(--main-hover);
-  width: 1200px;
   height: 2px;
+  margin-bottom: 30px;
 }
-
-
-

@@ -1,22 +1,23 @@
 .hero {
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 30px 0px 30px 0px;
   background: linear-gradient(160deg, #4981c1, #f0f8ff);
+}
+
+.hero__title-wrapper {
+  width: 50%;
 }
 
 .hero-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-
-.hero__title-wrapper {
-  width: 600px;
+  padding: 30px 0px 30px 0px;
 }
 
 .hero__title {
   font-family: "Kanit-Bold";
-  font-size: 50px;
+  font-size: 35px;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -28,8 +29,8 @@
 }
 
 .hero__img-wrapper {
-  width: 350px;
-  height: 350px;
+  width: 220px;
+  height: 220px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
@@ -41,8 +42,8 @@
 .hero__img-wrapper::before {
   content: " ";
   position: absolute;
-  width: 350px;
-  height: 350px;
+  width: 220px;
+  height: 220px;
   background: linear-gradient(to top, #ffd700, #0057b8);
   animation: animate 4s linear infinite;
 }
@@ -53,8 +54,8 @@
   border-radius: 50%;
   background-image: url(../assets/human.jpg);
   background-size: cover;
-  width: 330px;
-  height: 330px;
+  width: 210px;
+  height: 210px;
 }
 
 @keyframes animate {
@@ -63,5 +64,24 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 50px;
+  }
+  .hero__img-wrapper {
+    width: 350px;
+    height: 350px;
+  }
+
+  .hero__img-wrapper::before {
+    width: 350px;
+    height: 350px;
+  }
+  .hero__img-wrapper::after {
+    width: 330px;
+    height: 330px;
   }
 }

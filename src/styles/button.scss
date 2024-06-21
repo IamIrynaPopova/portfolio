@@ -1,31 +1,27 @@
 .button {
+  display: flex;
+  justify-content: center;
   width: 100px;
   margin: 0 auto;
   padding: 8px 16px;
+  border: 0;
   border-radius: 5px;
+  cursor: pointer;
+  color: var(--text-button);
   background-color: var(--main-color);
+  box-shadow: 0px 0px 10px 0px var(--main-color);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
-  display: flex;
-  justify-content: center;
-  color: var(--light-text);
-  border: 0;
-  cursor: pointer;
   font-family: inherit;
   font-size: 18px;
   line-height: 1.2;
   font-weight: 500;
-  min-width: 180px;
-  box-shadow: 0px 0px 10px 0px var(--main-color);
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--secondary-color);
-  color: var(--main-color);
+  color: var(--main-hover);
   box-shadow: 0px 0px 10px 0px var(--second-hover);
 }
 
-html[data-theme="dark"] .button {
-  background-color: #42446e;
-}
