@@ -11,7 +11,7 @@ import projects from "../data/projects.json";
 
 const App = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const [projectsStep, setProjectsStep] = useState(2);
+  const [projectsStep, setProjectsStep] = useState(screenWidth >= 1200 ? 3 : 2);
   const [visibleProjects, setVisibleProjects] = useState(
     projects.slice(0, projectsStep)
   );
@@ -35,9 +35,7 @@ const App = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [screenWidth]);
-
-  useEffect(() => {}, [visibleProjects]);
+  }, [screenWidth, visibleProjects]);
 
   const handleSubmitForm = async (data, e) => {
     e.preventDefault();
