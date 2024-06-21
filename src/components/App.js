@@ -11,7 +11,7 @@ import projects from "../data/projects.json";
 
 const App = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const [projectsStep, setProjectsStep] = useState(screenWidth <= 768 ? 2 : 3);
+  const [projectsStep, setProjectsStep] = useState(2);
   const [visibleProjects, setVisibleProjects] = useState(
     projects.slice(0, projectsStep)
   );
@@ -27,15 +27,15 @@ const App = () => {
   useEffect(() => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
-      setProjectsStep(window.innerWidth <= 768 ? 2 : 3);
+      screenWidth >= 1200 ? setProjectsStep(3) : setProjectsStep(2);
+      setVisibleProjects(projects.slice(0, projectsStep));
     };
 
     window.addEventListener("resize", handleResize);
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [screenWidth, projectsStep]);
+  }, [screenWidth]);
 
   useEffect(() => {}, [visibleProjects]);
 
