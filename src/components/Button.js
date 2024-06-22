@@ -1,9 +1,14 @@
 import React from "react";
+import { useState } from "react";
 
-const Button = ({ onLoadMore }) => {
+const Button = ({ onLoadMore, onClick }) => {
   return (
     <div className="container">
-      <button onClick={onLoadMore} type="button" className="button">
+      <button
+        onClick={onLoadMore}
+        type="button"
+        className={onClick ? "button button-clicked" : "button"}
+      >
         Показати ще
       </button>
     </div>

@@ -96,31 +96,28 @@ html[data-theme="dark"] .form__input::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.button {
-  width: 100px;
-  margin: 0 auto;
-  padding: 8px 16px;
-  border-radius: 5px;
-  background-color: var(--main-color);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  text-align: center;
+.form__button {
   display: flex;
   justify-content: center;
-  color: var(--text-button);
+  margin: 0 auto;
+  padding: 10px 20px;
   border: 0;
+  border-radius: 5px;
   cursor: pointer;
+  color: var(--text-button);
+  background-color: var(--main-color);
+  box-shadow: 0px 0px 10px 0px var(--main-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
   font-family: inherit;
   font-size: 18px;
   line-height: 1.2;
   font-weight: 500;
-  min-width: 180px;
-  box-shadow: 0px 0px 10px 0px var(--main-color);
 }
 
-.button:hover,
-.button:focus {
+.form__button:hover,
+.form__button:focus {
+  color: var(--main-hover);
   background-color: var(--secondary-color);
-  color: var(--main-color);
   box-shadow: 0px 0px 10px 0px var(--second-hover);
 }
-

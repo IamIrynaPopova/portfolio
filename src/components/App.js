@@ -17,25 +17,27 @@ const App = () => {
   );
   const [formSubmit, setFormSubmit] = useState(false);
 
-  const loadMore = () => {
+  useEffect(() => {
+    const handleResize = (e) => {
+      setScreenWidth(window.innerWidth);
+      setProjectsStep(window.innerWidth >= 1200 ? 3 : 2);
+      setVisibleProjects(projects.slice(0, projectsStep));
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [screenWidth, visibleProjects]);
+
+  const loadMore = (e) => {
+    const button = e.target;
+    button.classList.add("button-clicked");
     const nextProjects = projects.slice(
       visibleProjects.length,
       visibleProjects.length + projectsStep
     );
     setVisibleProjects([...visibleProjects, ...nextProjects]);
   };
-  useEffect(() => {
-    const handleResize = () => {
-      setScreenWidth(window.innerWidth);
-      screenWidth >= 1200 ? setProjectsStep(3) : setProjectsStep(2);
-      setVisibleProjects(projects.slice(0, projectsStep));
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [screenWidth, visibleProjects]);
 
   const handleSubmitForm = async (data, e) => {
     e.preventDefault();

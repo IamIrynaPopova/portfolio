@@ -83,7 +83,7 @@ const Form = ({ onSubmitForm }) => {
               </li>
             </div>
           </ul>
-          <button type="submit" className="button">
+          <button type="submit" className="form__button">
             Відправити
           </button>
         </form>
