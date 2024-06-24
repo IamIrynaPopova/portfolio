@@ -5,6 +5,7 @@
 }
 
 .header__wrapper {
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,41 +13,35 @@
   padding-bottom: 20px;
 }
 
-.nav__list {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-}
-
-.nav__list__item {
-  font-size: 16px;
-  cursor: pointer;
-  padding: 10px;
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.5s ease;
-}
-
-.nav__list__item:hover,
-.nav__list__item:focus {
-  color: var(--secondary-color);
-  transition: color 0.5s ease;
+.nav {
+  display: none;
 }
 
 .theme {
-  margin-left: 20px;
+  margin-left: 140px;
 }
 
 .theme__button {
   position: relative;
-  width: 50px;
-  height: 30px;
+  width: 45px;
+  height: 25px;
   border-radius: 15px;
   border: 1px solid var(--main-color);
-  padding: 4px;
+  padding: 2px;
   cursor: pointer;
   background-color: transparent;
   transition: border 0.5s ease;
+}
+
+.theme__switch {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  left: 0;
+  top: 1px;
+  background-color: var(--main-color);
+  transition: background-color 0.5s ease;
 }
 
 .theme__button::after {
@@ -118,57 +113,76 @@
   transition: background-color 0.5s ease;
 }
 
-.theme__switch {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  left: 0;
-  top: 2px;
-  background-color: var(--main-color);
-  transition: background-color 0.5s ease;
-}
-
-.nav {
-  display: inline-flex;
-}
-
-.nav__contacts,
-.nav__contacts-list {
+.contacts,
+.contacts-list {
   display: inline-flex;
   align-items: center;
 }
 
-.nav__contacts__item {
+.contacts__item {
   padding: 10px;
 }
 
-.nav__contacts__item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 20px;
 }
 
-.nav__contacts__link {
+.contacts__link {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-.nav__contacts__svg {
+.contacts__svg {
   width: 25px;
   height: 25px;
   fill: var(--main-color);
   transition: fill 0.5s ease;
 }
 
-.nav__contacts__svg:hover,
-.nav__contacts__svg:focus {
+.contacts__svg:hover,
+.contacts__svg:focus {
   fill: var(--secondary-color);
   transition: fill 0.5s ease;
 }
 
-.human {
-  width: 100px;
-  margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+  .nav {
+    display: inline-flex;
+  }
+  .nav__list {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .nav__list__item {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.5s ease;
+  }
+
+  .nav__list__item:hover,
+  .nav__list__item:focus {
+    color: var(--secondary-color);
+    transition: color 0.5s ease;
+  }
+  .theme {
+    margin-left: 20px;
+  }
+  .theme__switch {
+    width: 24px;
+    height: 24px;
+    top: 2px;
+  }
+  .theme__button {
+    width: 50px;
+    height: 30px;
+    padding: 4px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

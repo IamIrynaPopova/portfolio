@@ -1,7 +1,8 @@
 import React from "react";
 import ThemeToggle from "./ThemeToggle";
+import Mobile from "./Mobile";
 
-const AppBar = () => {
+const AppBar = ({ onClickOpen, onClickClose }) => {
   return (
     <header className="header ">
       <div className="header__wrapper container ">
@@ -29,34 +30,31 @@ const AppBar = () => {
             </li>
           </ul>
         </nav>
-        <div className="nav__contacts">
-          <ul className="nav__contacts-list">
-            <li className="nav__contacts__item">
+        <div className="contacts">
+          <ul className="contacts-list">
+            <li className="contacts__item">
               <a
                 href="https://github.com/IamIrynaPopova"
-                className="nav__contacts__link"
+                className="contacts__link"
               >
-                <svg className="nav__contacts__svg">
+                <svg className="contacts__svg">
                   <use href="./assets/sprite.svg#github"></use>
                 </svg>
               </a>
             </li>
-            <li className="nav__contacts__item">
+            <li className="contacts__item">
               <a
                 href="https://www.linkedin.com/in/irynapopova/"
-                className="nav__contacts__link"
+                className="contacts__link"
               >
-                <svg className="nav__contacts__svg">
+                <svg className="contacts__svg">
                   <use href="./assets/sprite.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
-            <li className="nav__contacts__item">
-              <a
-                href="https://t.me/Iam_IrynaPopova"
-                className="nav__contacts__link"
-              >
-                <svg className="nav__contacts__svg">
+            <li className="contacts__item">
+              <a href="https://t.me/Iam_IrynaPopova" className="contacts__link">
+                <svg className="contacts__svg">
                   <use href="./assets/sprite.svg#telegram"></use>
                 </svg>
               </a>
@@ -64,6 +62,7 @@ const AppBar = () => {
           </ul>
           <ThemeToggle />
         </div>
+        <Mobile onClickOpen={onClickOpen} onClickClose={onClickClose} />
       </div>
     </header>
   );

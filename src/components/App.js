@@ -29,6 +29,18 @@ const App = () => {
     };
   }, [screenWidth, visibleProjects]);
 
+  const onClickMobileOpen = () => {
+    const mobileMenu = document.getElementById("mobileMenu");
+    const isMenuOpen = mobileMenu.getAttribute("is-open");
+    mobileMenu.setAttribute("is-open", isMenuOpen ? true : false);
+  };
+
+  const onClickMobileClose = () => {
+    const mobileMenu = document.getElementById("mobileMenu");
+    const isMenuOpen = mobileMenu.getAttribute("is-open");
+    mobileMenu.setAttribute("is-open", isMenuOpen ? false : true);
+  };
+
   const loadMore = (e) => {
     const button = e.target;
     button.classList.add("button-clicked");
@@ -70,7 +82,10 @@ const App = () => {
 
   return (
     <>
-      <AppBar />
+      <AppBar
+        onClickOpen={onClickMobileOpen}
+        onClickClose={onClickMobileClose}
+      />
       <Hero />
       <StackList />
       <ProjectsList projects={visibleProjects} />

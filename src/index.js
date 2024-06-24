@@ -13,9 +13,6 @@ import sprite from "./assets/sprite.svg";
 import sprite2 from "./assets/sprite2.svg";
 import css from "./styles/main.scss";
 
-// document.body.innerHTML = '<div id="root"></div>';
-
-
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
