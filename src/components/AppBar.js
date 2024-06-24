@@ -60,9 +60,11 @@ const AppBar = ({ onClickOpen, onClickClose }) => {
               </a>
             </li>
           </ul>
-          <ThemeToggle />
+          <div className="header__handler">
+            <ThemeToggle />
+            <Mobile onClickOpen={onClickOpen} onClickClose={onClickClose} />
+          </div>
         </div>
-        <Mobile onClickOpen={onClickOpen} onClickClose={onClickClose} />
       </div>
     </header>
   );
