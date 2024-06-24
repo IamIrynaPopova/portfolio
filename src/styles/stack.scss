@@ -3,6 +3,11 @@
   padding-bottom: 30px;
 }
 
+.stack-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .stack__title-wrapper {
   display: flex;
   flex-direction: column;
@@ -10,16 +15,16 @@
 }
 .stack__title {
   font-family: "Kanit-Bold";
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 5px;
 }
 .stack__text {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.2;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .stack__list-wrapper {
@@ -29,14 +34,31 @@
 
 .stack__list {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 15px;
   justify-items: center;
 }
 
 .stack__svg {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .stack__list {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .stack__title {
+    font-size: 30px;
+  }
+  .stack__text {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .stack__svg {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

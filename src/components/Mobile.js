@@ -1,6 +1,6 @@
 import React from "react";
 
-const Mobile = ({onClickOpen, onClickClose }) => {
+const Mobile = ({ onClickOpen, onClickClose }) => {
   return (
     <div className="mobile">
       <button type="button" className="mobile__button" onClick={onClickOpen}>
@@ -8,7 +8,7 @@ const Mobile = ({onClickOpen, onClickClose }) => {
           <use href="./assets/sprite2.svg#icon-menu"></use>
         </svg>
       </button>
-      <div id="mobileMenu" className="mobile__menu container" is-open="false">
+      <div id="mobileMenu" className="mobile__menu" is-open="false">
         <button type="button" className="mobile__button" onClick={onClickClose}>
           <svg className="mobile__svg ">
             <use href="./assets/sprite2.svg#icon-close-menu"></use>
@@ -17,22 +17,34 @@ const Mobile = ({onClickOpen, onClickClose }) => {
         <nav className="mobile__nav">
           <ul className="mobile__nav__list">
             <li className="mobile__nav__item">
-              <a className="mobile__nav__link" href="">
+              <a className="mobile__nav__link" href="" onClick={onClickClose}>
                 Про мене
               </a>
             </li>
             <li className="mobile__nav__item">
-              <a className="mobile__nav__link" href="#stack">
+              <a
+                className="mobile__nav__link"
+                href="#stack"
+                onClick={onClickClose}
+              >
                 Навички
               </a>
             </li>
             <li className="mobile__nav__item">
-              <a className="mobile__nav__link" href="#project">
+              <a
+                className="mobile__nav__link"
+                href="#project"
+                onClick={onClickClose}
+              >
                 Портфоліо
               </a>
             </li>
             <li className="mobile__nav__item">
-              <a className="mobile__nav__link" href="#form">
+              <a
+                className="mobile__nav__link"
+                href="#form"
+                onClick={onClickClose}
+              >
                 Написати мені
               </a>
             </li>

@@ -1,7 +1,7 @@
 .form {
   margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .form-wrapper {
@@ -19,7 +19,7 @@
 }
 
 .form__list {
-  width: 500px;
+  width: 100%;
 }
 
 .form__item:not(:last-child) {
@@ -120,4 +120,14 @@ html[data-theme="dark"] .form__input::placeholder {
   color: var(--main-hover);
   background-color: var(--secondary-color);
   box-shadow: 0px 0px 10px 0px var(--second-hover);
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .form__list {
+    width: 500px;
+  }
 }
