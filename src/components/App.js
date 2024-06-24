@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import AppBar from "./AppBar";
 import Hero from "./Hero";
 import StackList from "./StackList";
@@ -11,23 +10,32 @@ import projects from "../data/projects.json";
 
 const App = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const [projectsStep, setProjectsStep] = useState(screenWidth >= 1200 ? 3 : 2);
-  const [visibleProjects, setVisibleProjects] = useState(
-    projects.slice(0, projectsStep)
-  );
+  const [projectsStep, setProjectsStep] = useState(0);
+  const [visibleProjects, setVisibleProjects] = useState([]);
   const [formSubmit, setFormSubmit] = useState(false);
 
   useEffect(() => {
-    const handleResize = (e) => {
-      setScreenWidth(window.innerWidth);
-      setProjectsStep(window.innerWidth >= 1200 ? 3 : 2);
-      setVisibleProjects(projects.slice(0, projectsStep));
+    const handleResize = () => {
+      const newWidth = window.innerWidth;
+      setScreenWidth(newWidth);
+
+      let newProjectsStep;
+      if (newWidth >= 1200) {
+        newProjectsStep = 3;
+      } else if (newWidth >= 768) {
+        newProjectsStep = 2;
+      } else {
+        newProjectsStep = 1;
+      }
+      setProjectsStep(newProjectsStep);
+      setVisibleProjects(projects.slice(0, newProjectsStep));
     };
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [screenWidth, visibleProjects]);
+  }, []);
 
   const onClickMobileOpen = () => {
     const mobileMenu = document.getElementById("mobileMenu");
