@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
-const Form = ({ onSubmitForm }) => {
+const Form = ({ onSubmitForm, children }) => {
   const {
     register,
     handleSubmit,
@@ -9,10 +9,10 @@ const Form = ({ onSubmitForm }) => {
   } = useForm();
 
   return (
-    <section id="form" className="form">
+    <section className="form">
       <div className="form-wrapper container">
-        <form onSubmit={handleSubmit(onSubmitForm)}>
-          <p className="form__title">Напиcати мені можна тут 👇</p>
+        <form id="form" onSubmit={handleSubmit(onSubmitForm)}>
+          <p className="form__title">Напиcати мені</p>
           <ul className="form__list">
             <li className="form__item">
               <div className="form__wrap">
@@ -87,6 +87,7 @@ const Form = ({ onSubmitForm }) => {
             Відправити
           </button>
         </form>
+        {children}
       </div>
     </section>
   );

@@ -5,6 +5,8 @@ import StackList from "./StackList";
 import ProjectsList from "./ProjectsList";
 import Button from "./Button";
 import Form from "./Form";
+import Loader from "./Loader";
+import Notification from "./Notification";
 import Footer from "./Footer";
 import projects from "../data/projects.json";
 
@@ -13,6 +15,13 @@ const App = () => {
   const [projectsStep, setProjectsStep] = useState(0);
   const [visibleProjects, setVisibleProjects] = useState([]);
   const [formSubmit, setFormSubmit] = useState(false);
+  const [notification, setNotification] = useState({
+    show: false,
+    message: "",
+  });
+
+  const loader = document.getElementById("loader");
+  const form = document.getElementById("form");
 
   useEffect(() => {
     const handleResize = () => {
@@ -61,7 +70,8 @@ const App = () => {
 
   const handleSubmitForm = async (data, e) => {
     e.preventDefault();
-
+    form.classList.add("is-loading");
+    loader.classList.remove("hidden");
     try {
       const response = await fetch(
         "https://backend-portfolio-cuv6.onrender.com/api",
@@ -74,18 +84,40 @@ const App = () => {
         }
       );
 
+      const responseData = await response.json();
+      const message = await JSON.stringify(responseData.message);
+      console.log(message);
+
       if (response.ok) {
-        const responseData = await response.json();
-        const message = await JSON.stringify(responseData.message);
         e.target.reset();
         setFormSubmit(true);
-        alert(message);
+        loader.classList.add("hidden");
+        setTimeout(() => {
+          setNotification({
+            show: true,
+            message: "Вже читаю ваше повідомлення :)",
+          });
+        }, 1000);
       } else {
-        alert("Помилка відправки данних");
+        setNotification({
+          show: true,
+          message: "Виникла помилка",
+        });
+        loader.classList.add("hidden");
       }
     } catch (error) {
-      alert("Виникла помилка:", error);
+      setNotification({
+        show: true,
+        message: `Виникла помилка: ${error.message}`,
+      });
+      loader.classList.add("hidden");
     }
+  };
+
+  const onCloseNotification = () => {
+    setNotification({ show: false, message: "" });
+    form.classList.remove("is-loading");
+    form.reset();
   };
 
   return (
@@ -100,7 +132,15 @@ const App = () => {
       {visibleProjects.length !== projects.length && (
         <Button onLoadMore={loadMore} />
       )}
-      <Form onSubmitForm={handleSubmitForm} />
+      <Form onSubmitForm={handleSubmitForm}>
+        <Loader />
+        {notification.show && (
+          <Notification
+            onNotification={onCloseNotification}
+            message={notification.message}
+          />
+        )}
+      </Form>
       <Footer />
     </>
   );

@@ -1,6 +1,6 @@
 .projects {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .projects__title-wrapper {
@@ -36,7 +36,7 @@
   display: inline-flex;
   align-items: center;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   margin-bottom: 20px;
   height: auto;
   cursor: pointer;
@@ -121,6 +121,10 @@
   margin-right: 5px;
 }
 @media screen and (min-width: 768px) {
+  .projects {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .projects__list {
     display: inline-flex;
     flex-wrap: wrap;
