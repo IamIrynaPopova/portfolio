@@ -19,28 +19,24 @@ const App = () => {
     show: false,
     message: "",
   });
-  console.log(visibleProjects);
-  console.log(projectsStep);
 
-  const loader = document.getElementById("loader");
-  const form = document.getElementById("form");
+  const handleResize = () => {
+    const newWidth = window.innerWidth;
+    setScreenWidth(newWidth);
+
+    let newProjectsStep;
+    if (newWidth >= 1200) {
+      newProjectsStep = 3;
+    } else if (newWidth >= 768) {
+      newProjectsStep = 2;
+    } else {
+      newProjectsStep = 1;
+    }
+    setProjectsStep(newProjectsStep);
+    setVisibleProjects(projects.slice(0, newProjectsStep));
+  };
 
   useEffect(() => {
-    const handleResize = () => {
-      const newWidth = window.innerWidth;
-      setScreenWidth(newWidth);
-
-      let newProjectsStep;
-      if (newWidth >= 1200) {
-        newProjectsStep = 3;
-      } else if (newWidth >= 768) {
-        newProjectsStep = 2;
-      } else {
-        newProjectsStep = 1;
-      }
-      setProjectsStep(newProjectsStep);
-      setVisibleProjects(projects.slice(0, newProjectsStep));
-    };
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => {
@@ -71,6 +67,8 @@ const App = () => {
   };
 
   const handleSubmitForm = async (data, e) => {
+    const loader = document.getElementById("loader");
+    const form = document.getElementById("form");
     e.preventDefault();
     form.classList.add("is-loading");
     loader.classList.remove("hidden");
@@ -117,6 +115,7 @@ const App = () => {
   };
 
   const onCloseNotification = () => {
+    const form = document.getElementById("form");
     setNotification({ show: false, message: "" });
     form.classList.remove("is-loading");
     form.reset();
