@@ -19,6 +19,8 @@ const App = () => {
     show: false,
     message: "",
   });
+  console.log(visibleProjects);
+  console.log(projectsStep);
 
   const loader = document.getElementById("loader");
   const form = document.getElementById("form");
@@ -44,7 +46,7 @@ const App = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [screenWidth]);
 
   const onClickMobileOpen = () => {
     const mobileMenu = document.getElementById("mobileMenu");
