@@ -11,14 +11,14 @@
 
 .projects__title {
   font-family: "Kanit-Bold";
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 5px;
 }
 
 .projects__text {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.2;
   margin-bottom: 15px;
@@ -134,6 +134,13 @@
   .projects__item:focus {
     transform: scale(1.1);
     box-shadow: 0px 0px 10px 0px var(--second-hover);
+  }
+  .projects__title {
+    font-size: 30px;
+  }
+
+  .projects__text {
+    font-size: 15px;
   }
 }
 
