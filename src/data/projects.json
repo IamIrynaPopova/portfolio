@@ -1,5 +1,13 @@
 [
   {
+    "photo": "./assets/photographer.png",
+    "name": "Photographer",
+    "text": "Сайт портфоліо. Desktop version.",
+    "stack": "HTML5, SASS, JavaScript, React, Webpack",
+    "link": "https://iamirynapopova.github.io/photographer/",
+    "code": "https://github.com/IamIrynaPopova/photographer"
+  },
+  {
     "photo": "./assets/zerno.jpg",
     "name": "Zerno",
     "text": "Це проєкт, створений для громадської організації ГО Зерно, яка проводить просвітницьку роботу серед дітей та підлітків - майстер-класи, дискусійні клуби, організацію дозвілля для сільських дітей та ВПО. В цьому командному проєкті я робила секції Запрошуємо до співпраці,Наші партнери та Бажаєш приєднатись до команди",
