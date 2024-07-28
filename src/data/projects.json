@@ -2,8 +2,8 @@
   {
     "photo": "./assets/photographer.png",
     "name": "Photographer",
-    "text": "Сайт портфоліо. Desktop version.",
-    "stack": "HTML5, SASS, JavaScript, React, Webpack",
+    "text": "MultiPage сайт-портфоліо з використанням react-router-dom. Desktop version. ",
+    "stack": "HTML5, SASS, JavaScript, React, React Router, Webpack",
     "link": "https://iamirynapopova.github.io/photographer/",
     "code": "https://github.com/IamIrynaPopova/photographer"
   },

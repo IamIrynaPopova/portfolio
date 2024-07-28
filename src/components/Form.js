@@ -12,7 +12,7 @@ const Form = ({ onSubmitForm, children }) => {
     <section className="form">
       <div className="form-wrapper container">
         <form id="form" onSubmit={handleSubmit(onSubmitForm)}>
-          <p className="form__title">Напиcати мені</p>
+          <p className="form__title">Написати мені</p>
           <ul className="form__list">
             <li className="form__item">
               <div className="form__wrap">
