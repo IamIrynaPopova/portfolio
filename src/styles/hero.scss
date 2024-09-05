@@ -48,7 +48,7 @@
   width: 220px;
   height: 220px;
   background: linear-gradient(to top, #ffd700, #0057b8);
-  animation: animate 4s linear infinite;
+  // animation: animate 4s linear infinite;
 }
 
 .hero__img-wrapper::after {
@@ -61,14 +61,14 @@
   height: 210px;
 }
 
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+// @keyframes animate {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
 
 @media screen and (min-width: 768px) {
   .hero__title-wrapper {

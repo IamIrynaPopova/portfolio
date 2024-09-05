@@ -1,6 +1,6 @@
 [
   {
-    "photo": "./assets/photographer.png",
+    "photo": "./assets/photographer.jpg",
     "name": "Photographer",
     "text": "MultiPage сайт з використанням react-router-dom. Desktop version. Сайт-портфоліо фотографа з анонсом минулих та актуальних виставок",
     "stack": "HTML5, SASS, JavaScript, React, React Router, Webpack",
