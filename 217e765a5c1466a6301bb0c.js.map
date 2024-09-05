@@ -1,0 +1,1 @@
+{"version":3,"file":"217e765a5c1466a6301bb0c.js","mappings":"+IAMA,QAJe,WACb,OAAQA,EAAAA,cAAA,UAAQC,UAAU,UAC5B,C","sources":["webpack://portfolio/./src/components/Footer.js"],"sourcesContent":["import React from \"react\";\n\nconst Footer = () => {\n  return  <footer className=\"footer\"></footer>;\n};\n\nexport default Footer;\n"],"names":["React","className"],"sourceRoot":""}

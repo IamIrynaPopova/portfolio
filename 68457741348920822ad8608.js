@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[684],{684:(e,t,a)=>{a.r(t),a.d(t,{default:()=>n});var i=a(294);const n=function(e){var t=e.message,a=e.onNotification;return i.createElement("div",{className:"notification",onClick:a},i.createElement("div",{className:"notification__wrapper"},i.createElement("p",{className:"notification__text"},t)))}}}]);
+//# sourceMappingURL=68457741348920822ad8608.js.map

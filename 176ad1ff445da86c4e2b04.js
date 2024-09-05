@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[17],{17:(t,e,o)=>{o.r(e),o.d(e,{default:()=>c});var n=o(294);const c=function(t){var e=t.onLoadMore,o=t.onClick;return n.createElement("div",{className:"container"},n.createElement("button",{onClick:e,type:"button",className:o?"button button-clicked":"button"},"Показати ще"))}}}]);
+//# sourceMappingURL=176ad1ff445da86c4e2b04.js.map

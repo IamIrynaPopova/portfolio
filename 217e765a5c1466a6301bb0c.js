@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[217],{217:(e,o,t)=>{t.r(o),t.d(o,{default:()=>f});var r=t(294);const f=function(){return r.createElement("footer",{className:"footer"})}}}]);
+//# sourceMappingURL=217e765a5c1466a6301bb0c.js.map
