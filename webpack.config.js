@@ -81,7 +81,10 @@ module.exports = (env) => {
         chunkFilename: devMode ? "[id].css" : "[id].[contenthash].css",
       }),
       new CopyPlugin({
-        patterns: [{ from: "./src/sitemap.xml", to: "sitemap.xml" }],
+        patterns: [
+          { from: "./src/sitemap.xml", to: "sitemap.xml" },
+          { from: "./src/robots.txt", to: "robots.txt" },
+        ],
       }),
     ],
   };
