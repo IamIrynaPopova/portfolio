@@ -34,12 +34,6 @@
   margin-bottom: 10px;
 }
 
-.form__wrap:hover,
-.form__wrap:focus {
-  cursor: pointer;
-  box-shadow: -3px 3px 3px 0px var(--second-hover);
-}
-
 .form__input {
   display: inline-block;
   box-sizing: border-box;
@@ -63,6 +57,7 @@
 .form__textarea:focus {
   border-left: 2px solid var(--second-hover);
   border-bottom: 2px solid var(--second-hover);
+  box-shadow: -3px 3px 3px 0px var(--second-hover);
 }
 
 .form__input::placeholder {
@@ -139,6 +134,6 @@ html[data-theme="dark"] .form__input::placeholder {
     width: 500px;
   }
   .form__title {
-  font-size: 30px;
-}
+    font-size: 30px;
+  }
 }

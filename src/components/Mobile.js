@@ -9,7 +9,12 @@ const Mobile = ({ onClickOpen, onClickClose }) => {
         </svg>
       </button>
       <div id="mobileMenu" className="mobile__menu" is-open="false">
-        <button type="button" className="mobile__button" onClick={onClickClose}>
+        <button
+          type="button"
+          className="mobile__button"
+          onClick={onClickClose}
+          aria-label="мобільне меню"
+        >
           <svg className="mobile__svg ">
             <use href="./assets/sprite2.svg#icon-close-menu"></use>
           </svg>

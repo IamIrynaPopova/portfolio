@@ -34,6 +34,7 @@ const ThemeToggle = () => {
         onClick={toggleTheme}
         type="button"
         className=" theme__button"
+        aria-label="Змінити тему екрану"
       >
         <div id="switch" className="theme__switch"></div>
       </button>
