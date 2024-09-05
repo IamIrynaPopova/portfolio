@@ -10,6 +10,7 @@ import foodSTA from "./assets/foodSTA.jpg";
 import SoYummy from "./assets/SoYummy.jpg";
 import zerno from "./assets/zerno.jpg";
 import photographer from "./assets/photographer.jpg";
+import favicon from "./assets/favicon.webp";
 import sprite from "./assets/sprite.svg";
 import sprite2 from "./assets/sprite2.svg";
 import css from "./styles/main.scss";
