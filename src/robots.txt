@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ipopovadev.website/sitemap.xml
