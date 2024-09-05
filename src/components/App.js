@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
-import AppBar from "./AppBar";
-import Hero from "./Hero";
-import StackList from "./StackList";
-import ProjectsList from "./ProjectsList";
-import Button from "./Button";
-import Form from "./Form";
-import Loader from "./Loader";
-import Notification from "./Notification";
-import Footer from "./Footer";
+import { lazy } from "react";
+const AppBar = lazy(() => import("./AppBar"));
+const Hero = lazy(() => import("./Hero"));
+const StackList = lazy(() => import("./StackList"));
+const ProjectsList = lazy(() => import("./ProjectsList"));
+const Button = lazy(() => import("./Button"));
+const Form = lazy(() => import("./Form"));
+const Loader = lazy(() => import("./Loader"));
+const Notification = lazy(() => import("./Notification"));
+const Footer = lazy(() => import("./Footer"));
 import projects from "../data/projects.json";
 
 const App = () => {

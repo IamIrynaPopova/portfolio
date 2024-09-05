@@ -25,7 +25,7 @@
 }
 
 .hero__title-name {
- margin-left: 10px;
+  margin-left: 10px;
   background: linear-gradient(45deg, #42446e 33%, #0057b8 66%, #ffd700);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -48,7 +48,6 @@
   width: 220px;
   height: 220px;
   background: linear-gradient(to top, #ffd700, #0057b8);
-  // animation: animate 4s linear infinite;
 }
 
 .hero__img-wrapper::after {
@@ -60,15 +59,6 @@
   width: 210px;
   height: 210px;
 }
-
-// @keyframes animate {
-//   0% {
-//     transform: rotate(0deg);
-//   }
-//   100% {
-//     transform: rotate(360deg);
-//   }
-// }
 
 @media screen and (min-width: 768px) {
   .hero__title-wrapper {
