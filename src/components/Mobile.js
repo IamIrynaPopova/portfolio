@@ -3,7 +3,12 @@ import React from "react";
 const Mobile = ({ onClickOpen, onClickClose }) => {
   return (
     <div className="mobile">
-      <button type="button" className="mobile__button" onClick={onClickOpen}>
+      <button
+        type="button"
+        className="mobile__button"
+        onClick={onClickOpen}
+        aria-label="відкрити мобільне меню"
+      >
         <svg className="mobile__svg ">
           <use href="./assets/sprite2.svg#icon-menu"></use>
         </svg>
@@ -13,7 +18,7 @@ const Mobile = ({ onClickOpen, onClickClose }) => {
           type="button"
           className="mobile__button"
           onClick={onClickClose}
-          aria-label="мобільне меню"
+          aria-label="закрити мобільне меню"
         >
           <svg className="mobile__svg ">
             <use href="./assets/sprite2.svg#icon-close-menu"></use>

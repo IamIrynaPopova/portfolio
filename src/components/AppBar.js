@@ -36,8 +36,9 @@ const AppBar = ({ onClickOpen, onClickClose }) => {
               <a
                 href="https://github.com/IamIrynaPopova"
                 className="contacts__link"
+                aria-label="Перейти на GitHub профіль"
               >
-                <svg className="contacts__svg">
+                <svg className="contacts__svg" aria-hidden="true">
                   <use href="./assets/sprite.svg#github"></use>
                 </svg>
               </a>
@@ -46,15 +47,20 @@ const AppBar = ({ onClickOpen, onClickClose }) => {
               <a
                 href="https://www.linkedin.com/in/irynapopova/"
                 className="contacts__link"
+                aria-label="Перейти на Linkedin профіль"
               >
-                <svg className="contacts__svg">
+                <svg className="contacts__svg" aria-hidden="true">
                   <use href="./assets/sprite.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
             <li className="contacts__item">
-              <a href="https://t.me/Iam_IrynaPopova" className="contacts__link">
-                <svg className="contacts__svg">
+              <a
+                href="https://t.me/Iam_IrynaPopova"
+                className="contacts__link"
+                aria-label="Мій Telegram"
+              >
+                <svg className="contacts__svg" aria-hidden="true">
                   <use href="./assets/sprite.svg#telegram"></use>
                 </svg>
               </a>
