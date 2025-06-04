@@ -1,5 +1,13 @@
 [
   {
+    "photo": "./assets/dsgroup.png",
+    "name": "DS-group",
+    "text": "Багатосторінковий сайт для діючого дитячо-юнацького танцювального колективу DS Group з м. Києва. Реалізовано сучасну структуру з головною сторінкою та окремими сторінками команд. Сайт адаптивний, включає галереї фото та відео, інформацію про хореографів і виступи",
+    "stack": "HTML5, SASS, JavaScript, React, React Router, Webpack, EmailJS (інтеграція форми зворотного зв’язку), Swiper.js (слайдери у галереї), Leaflet (інтерактивна карта студії), gh-pages (розгортання сайту), image-webpack-loader (оптимізація зображень)",
+    "link": "https://dsgroup.com.ua/",
+    "code": "https://github.com/IamIrynaPopova/ds-group"
+  },
+  {
     "photo": "./assets/photographer.jpg",
     "name": "Photographer",
     "text": "MultiPage сайт з використанням react-router-dom. Desktop version. Сайт-портфоліо фотографа з анонсом минулих та актуальних виставок",
