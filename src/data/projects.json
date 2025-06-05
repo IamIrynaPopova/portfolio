@@ -10,7 +10,7 @@
   {
     "photo": "./assets/photographer.jpg",
     "name": "Photographer",
-    "text": "MultiPage сайт з використанням react-router-dom. Desktop version. Сайт-портфоліо фотографа з анонсом минулих та актуальних виставок",
+    "text": "Сайт-портфоліо фотографа з анонсом минулих та актуальних виставок, створений на базі React. Проєкт демонструє галереї робіт, стиль зйомки та контактну інформацію. Desktop version.",
     "stack": "HTML5, SASS, JavaScript, React, React Router, Webpack",
     "link": "https://iamirynapopova.github.io/photographer/",
     "code": "https://github.com/IamIrynaPopova/photographer"
